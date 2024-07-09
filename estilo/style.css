@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'crikaluna';
+    src: url('../fontes/Thesignature.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fontetitulo: 'crikaluna', sans-serif;
+    --fontedestaque: "Saira", sans-serif;
+
+    --rosapink: #e94c66
+}
+
+header {
+    background-color: black;
+    height: 113px;
+
+}
+
+header > h1 {
+    color: var(--rosapink);
+    text-align: center;
+    padding-top: 30px;
+    font-family: var(--fontetitulo);
+    font-weight: lighter;
+    font-size: 60px;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fontedestaque);
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+div#bembeleza {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family: var(--fontetitulo);
+    font-size: 30px;
+}
+
+section.imagem1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+img#unhabege {
+    height: 180px;
+    margin-top: 30px;
+    
+    border-top-left-radius: 100px;
+}
