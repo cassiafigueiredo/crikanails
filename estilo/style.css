@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');*/
 
 @font-face {
     font-family: 'crikaluna';
@@ -8,6 +8,11 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'dreamorphans';
+    src: url('../fontes/Dream\ Orphans.otf') format('opentype');
+    font-weight: normal;
+}
 
 * {
     padding: 0px;
@@ -16,14 +21,31 @@
 
 :root {
     --fontetitulo: 'crikaluna', sans-serif;
-    --fontedestaque: "Saira", sans-serif;
+    /*--fontedestaque: "Saira", sans-serif;*/
+    --fontedestaque: 'dreamorphans', sans-serif;
 
     --rosapink: #e94c66
 }
 
+
+body {
+    background-color: var(--rosapink)
+}
+
+
+main {
+    background-color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    margin: auto;
+    width: 90vw;
+    height: 220vh;
+}
+
+
 header {
     background-color: black;
     height: 113px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.705);
 
 }
 
@@ -40,25 +62,89 @@ header > p {
     color: white;
     font-family: var(--fontedestaque);
     font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
     text-align: center;
     
 }
 
+
 div#bembeleza {
-    margin-top: 30px;
-    margin-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
     font-family: var(--fontetitulo);
-    font-size: 30px;
+    font-size: 25px;
 }
 
-section.imagem1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-img#unhabege {
-    height: 180px;
-    margin-top: 30px;
+
+
+div#imagem1 {
+    margin-left: 30px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 250px;
     
+}
+img#unharosa {
+    height: 230px;
+    width: 190px;
+    margin-top: 30px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.486);
     border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    left: 250px;
+    transform: translate(0px, -20px);
+}
+div > p#manitxt{
+    position: relative;
+    left: 20px;
+    top: 120px;
+    font-family: var(--fontedestaque);
+    font-weight:600;
+    font-size: 25px;
+}
+
+
+
+
+section#parallax {
+    
+    background-image: url(../imagens/pesparallaxx.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 250px;
+}
+section > p#spatxt {
+    font-family: var(--fontedestaque);
+    font-size: 35px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+
+div#imagem2 {
+    margin-left: 30px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 200px;
+    
+}
+img#unhadecorada {
+    height: 230px;
+    width: 190px;
+    margin-top: 30px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.486);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    left: 250px;
+    transform: translate(0px, -20px);
 }
