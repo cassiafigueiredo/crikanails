@@ -36,11 +36,13 @@ body {
 main {
     background-color: white;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
-    margin: auto;
-    width: 90vw;
-    height: 220vh;
+   
 }
-
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 90%;
+}
 
 header {
     background-color: black;
@@ -69,10 +71,12 @@ header > p {
 }
 
 
+
 div#bembeleza {
     padding-top: 50px;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     font-family: var(--fontetitulo);
@@ -82,16 +86,16 @@ div#bembeleza {
 
 
 div#imagem1 {
-    margin-left: 30px;
+    background-color: black;
+    
     margin-bottom: 60px;
     padding-top: 10px;
-    padding-bottom: 250px;
-    
+    padding-bottom: 230px;
 }
 img#unharosa {
-    height: 230px;
+    height: 240px;
     width: 190px;
-    margin-top: 30px;
+    margin-top: px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.486);
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
@@ -99,7 +103,7 @@ img#unharosa {
     left: 250px;
     transform: translate(0px, -20px);
 }
-div > p#manitxt{
+div > p#manicuretxt{
     position: relative;
     left: 20px;
     top: 120px;
@@ -110,41 +114,84 @@ div > p#manitxt{
 
 
 
-
 section#parallax {
-    
-    background-image: url(../imagens/pesparallaxx.jpeg);
+    background-image: url(../imagens/parallax.jpeg);
     background-size: cover;
+    background-position: bottom center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 90vw;
-    height: 250px;
+    width: 100%;
+    height: 290px;
+    margin-bottom: 40px;
 }
 section > p#spatxt {
     font-family: var(--fontedestaque);
+    font-weight: 700;
     font-size: 35px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.801);
     position: relative;
     top: 100px;
     left: 150px;
 }
 
+
+div#umcharme{
+    padding-bottom: 40px;
+    
+}
+div > p#umcharmetxt {
+    font-family: var(--fontetitulo);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    height: 20px;
+}
+
+
 div#imagem2 {
-    margin-left: 30px;
-    margin-bottom: 60px;
-    padding-top: 10px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 230px;
+    margin-bottom: 30px;
+    
     
 }
 img#unhadecorada {
-    height: 230px;
+    height: 240px;
     width: 190px;
-    margin-top: 30px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.486);
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     position: absolute;
-    left: 250px;
+    left: 45px;
     transform: translate(0px, -20px);
+}
+p#unhadecoradatxt {
+    font-family: var(--fontedestaque);
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 110px;
+}
+
+
+
+
+
+
+/* animaçao scrollreveal*/
+#bembeleza, #spatxt {
+    visibility: hidden;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+        max-width: 767px
+    }
 }
