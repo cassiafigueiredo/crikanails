@@ -28,24 +28,6 @@
 }
 
 
-body {
-    background-color: var(--rosapink)
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    /*box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);*/
-   
-}
-.container {
-    margin: 0 auto;
-    max-width: 1024px;
-    
-}
-
 header {
     background-color: black;
     height: 113px;
@@ -109,13 +91,14 @@ img#unharosa {
 }
 
 div#manicuretxt{
+    display: flex;
+    justify-content: center;
     color: black;
     margin: auto;
     width: 80%;
     max-width: 315px;
     background-color: rgb(233, 186, 180);
-    display: flex;
-    justify-content: center;
+   
     padding-top: 5px;
     padding-bottom: 200px;
     font-family: var(--fontedestaque);
@@ -125,7 +108,7 @@ div#manicuretxt{
 
 
 
-section#parallax {
+div#parallax {
     background-image: url(../imagens/parallax.jpeg);
     background-size: cover;
     background-position: bottom center;
@@ -138,7 +121,7 @@ section#parallax {
     justify-content: center;
     align-items: center;
 }
-section > p#spatxt {
+div > p#spatxt {
     font-family: var(--fontedestaque);
     font-weight: 600;
     font-size: 35px;
@@ -149,13 +132,11 @@ section > p#spatxt {
 
 
 div#umcharme{
-    display: flex;
-    justify-content: center;
+    margin: auto;
     max-width: 315px;
     width: 80%;
-    margin: auto;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color:rgb(233, 186, 180);
 }
 div > p#umcharmetxt {
@@ -171,12 +152,11 @@ div > p#umcharmetxt {
 div#imagem2 {
     display: flex;
     justify-content: center;
-    margin: 0px auto;
+    margin: auto;
     width: 80%;
     max-width: 315px;
     padding-top: 50px;
-    padding-bottom: 50px;
-    
+    padding-bottom: 25px;
     background-color: rgb(233, 186, 180);
     
 }
@@ -188,46 +168,63 @@ img#unhadecorada {
 }
 
 div#unhadecoradatxt {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 80%;
+    max-width: 315px;
     font-family: var(--fontedestaque);
     font-size: 25px;
-    width: 100%;
-    padding-bottom: 30px;
+    width: 80%;
+    max-width: 315px;
+    background-color: rgb(233, 186, 180);
+    padding-bottom: 300px;
     text-align: center;
 }  
 
 
 
 div#imagem3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translate(0px, -140px);
     margin: auto;
-    background-color: rgba(233, 186, 180, 0.384);
-    width: 90vw;
-    height: 40vh;
-    border-top-left-radius: 100%;
+    width: 80%;
+    max-width: 315px; 
+        
 }
 
 div > img#pedicure {
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    width: 30vw;
-    height: 50%;
-    position: relative;
-    left: 10%;
+    margin: auto;
+    
+    height: 290px;
+    width: 190px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    ;
 }
-p#pedicure {
-    color: white;
-    background-color: black;
+div > p#pedicuretxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0px;
     font-family: var(--fontedestaque);
     font-size: 25px;
     text-align: center;
-    width: 30vw;
-    padding-top: 5px;
     padding-bottom: 5px;
-    position: relative;
-    left: 60px;
-    transform: translate(0px, -15px)
+    padding-top: 20px;
 }
 
-
+div#sobre {
+    height: 300px;
+    max-width: 315;
+    color: white;
+    background-color: black;
+}
 
 
 
@@ -237,9 +234,3 @@ p#pedicure {
 }
 
 
-@media (max-width: 767px) {
-    .container {
-        width: 90%;
-        max-width: 767px
-    }
-}
