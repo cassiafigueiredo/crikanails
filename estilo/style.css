@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 
 @font-face {
@@ -23,7 +25,7 @@
 
 :root {
     --fontetitulo: 'crikaluna', sans-serif;
-    --fonteparagrafo: "Montagu Slab", sans-serif;
+    --fonteparagrafo: "Poppins", sans-serif;
     --fontedestaque: 'dreamorphans', sans-serif;
 
     --rosapink: rgb(236, 167, 158);
@@ -101,7 +103,7 @@ div#manicuretxt{
     max-width: 315px;
     background-color: rgb(233, 186, 180);
    
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 200px;
     font-family: var(--fontedestaque);
     font-weight:550;
@@ -182,6 +184,7 @@ div#unhadecoradatxt {
     width: 80%;
     max-width: 315px;
     background-color: rgb(233, 186, 180);
+    padding-top: 40px;
     padding-bottom: 300px;
     text-align: center;
 }  
@@ -201,7 +204,7 @@ div#imagem3 {
 
 div > img#pedicure {
     margin: auto;
-    
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.473);
     height: 290px;
     width: 190px;
     border-top-left-radius: 100px;
@@ -218,7 +221,7 @@ div > p#pedicuretxt {
     font-size: 25px;
     text-align: center;
     padding-bottom: 5px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 
@@ -229,30 +232,46 @@ div#sobre {
     align-items: center;
     justify-content: center;
     background-color: black;
-    height: 500px;
+    height: 550px;
     
 }
 
 img#imagem4 {
-    width: 150px;
-    height: 200px;
-
-    padding-bottom: 35px;
+    display: block;
+    transform: translate(0px, -15px);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    
 }
 h2#h2CL {
+    display: block;
+    transform: translate(0px, 10px);
     color: var(--rosapink);
     font-family: var(--fontetitulo);
     font-weight: 300;
-    font-size: 40px;
+    font-size: 50px;
 }
 h3#h3CL {
+    display: block;
+    transform: translate(0px, 25px);
     color: white;
+    font-family: var(--fonteparagrafo);
+    font-weight: 400;
 }
 div > p#pCL {
+    
+    display: block;
+    transform: translate(0px, 40px);
+    padding: 15px;
+    line-height: 25px;
     font-family:var(--fonteparagrafo);
     font-weight: 300;
-    text-indent: 5px;
+    text-indent: 10px;
+    text-align:center;
     color: white;
+    max-width: 400px;
 
 }
 
@@ -263,13 +282,15 @@ div#contato {
     justify-content: center;
     align-items: center;
     margin-top: 0px;
-    height: 70px;
+    padding-bottom: 30px;
+    height: 100px;
     max-width: 315;
     color: white;
     background-color: black;
 }
 
 input#botao {
+    
     display: flex;
     width: 190px;
     height: 50px;
@@ -285,7 +306,7 @@ input.animationFadeInFadeOut {
 
 @keyframes fadeInfadeOut {
     0% {opacity: 1;}
-    50% {opacity: 0.8;}
+    50% {opacity: 0.6;}
     100% {opacity: 1;}
 }
 
@@ -296,3 +317,19 @@ input.animationFadeInFadeOut {
 }
 
 
+footer {
+    font-size: 10px;
+    text-align: center;
+    
+    background-color: black;
+    color: var(--rosapink);
+    font-family: var(--fonteparagrafo);
+}
+
+footer > a {
+    text-decoration: none;
+}
+
+footer > a:visited {
+    color: var(--rosapink);
+}
