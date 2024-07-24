@@ -175,8 +175,8 @@ div#unhadecoradatxt {
     display: flex;
     justify-content: center;
     margin: auto;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     width: 80%;
     max-width: 315px;
     font-family: var(--fontedestaque);
@@ -199,7 +199,7 @@ div#imagem3 {
     margin: auto;
     width: 80%;
     max-width: 315px; 
-        
+    
 }
 
 div > img#pedicure {
